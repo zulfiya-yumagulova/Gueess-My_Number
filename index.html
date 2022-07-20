@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <header>
+      <button class="btn again">Again!</button>
+      <h1>Guess My Number!</h1>
+      <h5>Between 1 and 20</h5>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="text" class="passed-number" />
+        <button class="btn check">Check</button>
+      </section>
+      <section class="right">
+        <p class="message">Enter Yor Number</p>
+        <p class="label-score">Sore: <span class="score">0</span></p>
+        <p class=lable-highscore">High Score <span class="highscore">0</span></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
