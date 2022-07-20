@@ -53,14 +53,14 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.number {
-  width: 70px;
-  height: 70px;
+.secret-number {
+  width: 100px;
+  height: 100px;
   background-color: #e4fbff;
   border: 2px solid #333;
   border-radius: 10px;
   margin: 10px auto;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
@@ -105,10 +105,14 @@ input {
   text-align: center;
   margin-top: 5rem;
   font-size: 2rem;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .right {
     font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
 }

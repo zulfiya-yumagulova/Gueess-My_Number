@@ -16,20 +16,22 @@
   </head>
   <body>
     <header>
-      <button class="btn again">Again!</button>
+      <button class="btn again">Again</button>
       <h1>Guess My Number!</h1>
       <h5>Between 1 and 20</h5>
-      <div class="number">?</div>
+      <div class="secret-number">?</div>
     </header>
     <main>
       <section class="left">
-        <input type="text" class="passed-number" />
+        <input type="number" class="guess" />
         <button class="btn check">Check</button>
       </section>
       <section class="right">
         <p class="message">Enter Yor Number</p>
         <p class="label-score">Sore: <span class="score">0</span></p>
-        <p class=lable-highscore">High Score <span class="highscore">0</span></p>
+        <p class="lable-highscore">
+          High Score <span class="highscore">0</span>
+        </p>
       </section>
     </main>
     <script src="script.js"></script>
