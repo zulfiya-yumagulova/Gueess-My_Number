@@ -21,22 +21,22 @@ checkBtn.addEventListener("click", function () {
     document.querySelector(".score").textContent = score;
     console.log("correct");
   } else if (guessInput > randomNumber) {
-    if (score > 0) {
+    if (score > 1) {
       message.textContent = "Too high!";
       score--;
       document.querySelector(".score").textContent = score;
       console.log("too high");
     } else {
-      message.textContent = "You lostt the game";
+      message.textContent = "You lost the game";
     }
   } else if (guessInput < randomNumber) {
-    message.textContent = "Too low";
-    console.log("too low");
-    score--;
-    document.querySelector(".score").textContent = score;
-    if (score < 0) {
-      document.querySelector(".score").textContent = 0;
-      message.textContent = "You lost the game!";
+    if (score < 1) {
+      message.textContent = "Too low!";
+      score--;
+      document.querySelector(".score").textContent = score;
+      console.log("too low");
+    } else {
+      message.textContent = "You lost the game";
     }
   }
 });
