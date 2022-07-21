@@ -28,6 +28,8 @@ checkBtn.addEventListener("click", function () {
     // document.querySelector("h1").style.color = "#f4f4f4";
     // document.querySelectorAll("p").style.color = "#f4f4f4";
     // document.querySelector(".secret-number").style.width = "30rem";
+    score > highScore ? (highScore = score) : score;
+    document.querySelector(".highscore").textContent = highScore;
   }
 
   // When input number is higher than random number
